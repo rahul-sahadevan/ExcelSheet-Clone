@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- nav section -->
+    <div class="main-nav">
+        <div class="navbar">
+            <div class="home-section">
+                <p>File</p>
+                <p class="home">Home</p>
+                <p>Insert</p>
+                <p>Layout</p>
+                <p>Help</p>
+            </div>
+        </div>
+        
+        <div class="button-section">
+            <button id="bold-btn"><i class="fa-solid fa-bold"></i></button>
+            <button id="italics-btn"><i class="fa-solid fa-italic"></i></button>
+            <button id="underline-btn"><i class="fa-solid fa-underline"></i></button>
+            <button id="left-btn"><i class="fa-sharp fa-solid fa-align-left"></i></button>
+            <button id="center-btn"><i class="fa-sharp fa-solid fa-align-center"></i></button>
+            <button id="right-btn"><i class="fa-sharp fa-solid fa-align-right"></i></button>
+    
+            <select name="" id="font-style-dropdown">
+                <option value="serif">Serif</option>
+                <option value="san-serif">San Serif</option>
+                <option value="monospace">Monospace</option>
+                <option value="cursive">Cursive</option>
+            </select>
+            <select name="" id="font-size-dropdown">
+                <option value="10px" contenteditable="true">10</option>
+                <option value="12px">12</option>
+                <option value="14px">14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+            </select>
+    
+            <label for="bgColor"><i class="fa-sharp fa-solid fa-fill-drip"></i></label>
+            <input type="color" id="bgColor">
+    
+            <label for="fontColor"><i class="fa-solid fa-font"></i></label>
+            <input type="color" id="fontColor">
+    
+            <button id="cut-btn"><i class="fa-solid fa-scissors"></i></button>
+            <button id="copy-btn"><i class="fa-solid fa-copy"></i></button>
+            <button id="paste-btn"><i class="fa-regular fa-clipboard"></i></button>
+            <button id="upload-btn" onclick="downloadMatrix()"><i class="fa-solid fa-cloud-arrow-down"></i></button>
+            <input type="file" accept=".json" id="upload-input">
+
+        </div>
+        <div class="selected-page">
+            <h1 id="current-cell">No Cell </h1>
+            <p class="f">fx</p>
+            <div class="white"></div>
+
+        </div>
+        
+    </div>
+    <div class="table-container">
+        <table id="my-table">
+            <thead>
+                <tr id="table-heading-row">
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+    
+            </tbody>
+        </table>
+
+    </div>
+    <br>
+    <footer class="footer">
+        <div>
+            <button id="add-sheet-btn"><i class="fa-solid fa-sheet-plastic"></i></button>
+            <button id="save-sheet-btn">Save</button>
+        </div>
+    
+        <div id="button-container">
+            <button id="sheet-1" onclick="viewSheet(event)">Sheet 1</button>
+    
+        </div>
+    </footer>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>

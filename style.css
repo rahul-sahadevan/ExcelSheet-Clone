@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #218C74;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.home-section{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+table{
+    border-collapse: collapse;
+   position: absolute;
+
+}
+
+
+th,td{
+    min-width: 80px;
+    border: 1px solid #333;
+}
+td{
+    outline: none;
+}
+body{
+    background-color: #ECF0F1;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    border: none;
+    padding: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+select{
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+.main-nav{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+    top: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.button-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.selected-page{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 10px;
+    align-items: center;
+}
+#current-cell{
+    background-color: white;
+    font-size: 16px;
+    padding: 4px;
+    width: 100px;
+    white-space: pre;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.white{
+    background-color: white;
+    padding: 13px;
+    width: 87%;
+}
+.f{
+    font-size: 20px;
+    font-style: italic;
+}
+.footer{
+    height: 50px;
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ECF0F1;
+}
+thead {
+    position: sticky;
+    left: 2rem;
+}
+
+tbody {
+    /* max-height: 500px; */
+    overflow-y: auto;
+}
+.table-container {
+    height: calc( 100vh - 3rem - 3rem - 2rem - 3rem );
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+    top: 200px;
+    max-height: 400px;
+
+   
+}
+#sheet-1{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#save-sheet-btn{
+    font-size: 18px;
+}
+/* In this code, I've set a maximum height for the tbody using the max-height property, and I've also added overflow-y: auto to enable vertical scrolling for the tbody when its content exceeds the specified maximum height. You can adjust the max-height value to fit your layout and design requirements. */
+
+
+
+
+
